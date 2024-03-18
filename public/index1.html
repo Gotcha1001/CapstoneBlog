@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/content.css">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center">Create your own Blog Post</h1>
+            <h3>View the blogs in the link below or create a new one</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3 centered-form">
+            <form action="/submit" method="POST" style="width: 100%;">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title:</label>
+                    <input type="text" class="form-control" id="title" name="title" required>
+                </div>
+                <div class="mb-3">
+                    <label for="content" class="form-label">Content:</label>
+                    <textarea class="form-control" id="content" name="content" rows="20" style="width: 100%;" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button style="margin-bottom: 10px;" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <p class="text-center">Click <a href="/">here</a> to view blog posts.</p>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+</html>
